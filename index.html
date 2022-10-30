@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Preahvihear&family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet">
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polar</title>
+    <style>
+
+        /* ==================menu=================== */
+
+
+        .body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1125px;
+            margin: 0px auto;
+
+
+        }
+
+        .header {
+            background: #F2CEDA;
+
+        }
+
+        .logo_img {
+            width: 79px;
+            padding: 10px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+
+            align-items: center;
+        }
+
+
+        .ul1 {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            display: flex;
+            padding: 10px;
+            font-family: 'Hind Madurai', sans-serif;
+        }
+
+        .li1 {
+            font-family: 'Hind Madurai', sans-serif;
+            color: #D23166;
+            font-weight: 700;
+            padding: 0px 10px 0px 10px;
+            padding: 10px;
+            font-size: 16px;
+
+            font-family: 'Preahvihear', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .li {
+            font-weight: 400;
+            padding: 0px 10px 0px 10px;
+            color: #150101;
+            padding: 10px;
+            
+
+        }
+
+        .button1 {
+            font-weight: 700;
+           
+            background: #D23166;
+            color: #ffffff;
+            padding: 10px;
+            font-size: 16px;
+            width: 165px;
+            border: 0px solid red;
+            border-radius: 5px;
+
+            margin-left: 60px;
+            font-size: 14px;
+            font-family: 'Preahvihear', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+        }
+       
+        /* ==============content=================== */
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 10px;
+            margin-top: 50px;
+        }
+
+        .content_img {
+            width: 100%;
+            max-width: 379px;
+        }
+
+        .txt3 {
+           
+            font-weight: 600;
+            color: #0F0101;
+            font-size: 14px;
+            font-family: 'Preahvihear', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .txt4 {
+            font-size: 57px;
+            font-family: 'Preahvihear', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .txt5 {
+            font-family: 'Hind Madurai', sans-serif;
+        }
+
+        .span1 {
+            color: #D23166;
+        }
+
+        .burger {
+            display: none;
+            padding: 10px;
+            margin-right: 10px;
+
+            background: url('burger_menu.png');
+            background-repeat: no-repeat;
+            background-size: 50px;
+
+            width: 25px;
+            height: 20px;
+        }
+
+        @media (max-width: 1100px) {
+            br {
+                display: none;
+            }
+            .list {
+                display: none;
+                
+            }
+
+
+
+
+            .content_img {
+                margin: 0px auto;
+                margin-top: 40px;
+            }
+            .burger {
+                display: block;
+            }
+
+            .content {
+                text-align: center;
+            }
+       
+           
+        }
+
+        .button2 {
+            font-weight: 700;
+           
+           background: #D23166;
+           color: #ffffff;
+           padding: 10px;
+           font-size: 16px;
+           width: 165px;
+           border: 0px solid red;
+           border-radius: 5px;
+           
+           margin-top: 10PX;
+           font-size: 14px;
+           font-family: 'Preahvihear', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+        }
+
+
+        /* ====================block 1================== */
+
+        .block1 {
+            background: white;
+            display: flex;
+          
+            
+        }
+
+        .container2 {
+            
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            margin: 0px auto;
+        }
+
+        .block2 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          font-family: 'Hind Madurai', sans-serif;
+          padding: 20px;
+
+          background: rgb(255, 255, 255);
+          width: 100%;
+          max-width: 220px;
+
+          margin-left: 30px;
+          margin-right: 30px;
+          
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.037);
+          
+        }
+
+        .icon1 {
+            object-fit: contain;
+        }
+
+        .txt6 {
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .txt7 {
+            font-weight: 400;
+        }
+
+      
+
+        /* ============block 4 site======================= */
+
+        .container3 {
+            max-width: 1125px;
+            margin: 0px auto;
+
+            padding: 10px 20px 20px 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .txt11 {
+            margin-top: 10px;
+            font-family: 'Hind Madurai', sans-serif;
+        }
+
+        .txt10 {
+            font-family: 'Preahvihear', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+            font-size: 44px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .button3 {
+            font-weight: 700;
+           
+           background: #D23166;
+           color: #ffffff;
+           padding: 10px;
+           font-size: 16px;
+           width: 165px;
+           border: 0px solid red;
+           border-radius: 5px;
+           margin-top: 10px;
+           font-size: 14px;
+           font-family: 'Preahvihear', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .milk {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        @media (max-width: 1102px) {
+            .milk {
+                margin: 0px auto;
+                margin-top: 10px;
+            }
+        }
+
+        /* ==================5 block site ================*/
+
+
+        .txt13 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            
+        }
+        .txt14 {
+            font-family: 'Preahvihear', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 44px;
+        }
+
+        .txt15 {
+            font-family: 'Preahvihear', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 18px;
+            }
+
+         .ul3 {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+         .li3 {
+            padding: 0px 10px 0px 10px;
+            color: #323232;
+          }
+        .li33 {
+           padding: 0px 10px 0px 10px;
+           color: #000000;
+        }
+
+        @media (max-width: 768px) {
+            .ul3 {
+                display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            margin: 0px auto;
+            margin-top: 30px;
+            }
+        }
+
+        .txt16 {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .txt17 {
+            font-size: 16px;
+            font-family: 'Preahvihear', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .del1 {
+          margin-left: 7px;
+          font-size: 12px;
+          font-family: 'Hind Madurai', sans-serif;
+       
+        }
+
+        /* ===============block 6 site=================== */
+
+.container3w {
+    max-width: 1125px;
+            margin: 0px auto;
+
+            padding: 10px 20px 20px 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+       
+}
+.txt12w1 {
+    text-align: end;
+}
+.txt10w1 {
+    font-family: 'Preahvihear', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+            font-size: 44px;
+            font-weight: 700;
+}
+.txt11w1 {
+    margin-top: 10px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+.txt16w1 {
+    display: flex;
+            margin-top: 20px;
+            
+}
+.txt17w1 {
+    font-size: 16px;
+            font-family: 'Preahvihear', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+}
+.span2 {
+    display: flex;
+    justify-content: end;
+}
+
+.del1w1 {
+    margin-left: 7px;
+          font-size: 12px;
+          font-family: 'Hind Madurai', sans-serif;
+}
+.button3w1 {
+    font-weight: 700;
+           
+           background: #D23166;
+           color: #ffffff;
+           padding: 10px;
+           font-size: 16px;
+           width: 165px;
+           border: 0px solid red;
+           border-radius: 5px;
+           margin-top: 10px;
+           font-size: 14px;
+           font-family: 'Preahvihear', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+}
+.milk {
+    width: 100%;
+            max-width: 400px;
+}
+
+
+/* =============block 7 site=============== */
+
+
+.container3w2 {
+    max-width: 1125px;
+            margin: 0px auto;
+
+            padding: 10px 20px 20px 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+       
+}
+.txt12w2 {
+    text-align: start;
+}
+.txt10w2 {
+    font-family: 'Preahvihear', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+            font-size: 44px;
+            font-weight: 700;
+}
+.txt11w2 {
+    margin-top: 10px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+.txt16w2 {
+    display: flex;
+            margin-top: 20px;
+            
+}
+.txt17w2 {
+    font-size: 16px;
+            font-family: 'Preahvihear', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+}
+.span3 {
+    display: flex;
+    justify-content: start;
+}
+
+.del1w2 {
+    margin-left: 7px;
+          font-size: 12px;
+          font-family: 'Hind Madurai', sans-serif;
+}
+.button3w2 {
+    font-weight: 700;
+           
+           background: #D23166;
+           color: #ffffff;
+           padding: 10px;
+           font-size: 16px;
+           width: 165px;
+           border: 0px solid red;
+           border-radius: 5px;
+           margin-top: 10px;
+           font-size: 14px;
+           font-family: 'Preahvihear', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+}
+.milk {
+    width: 100%;
+            max-width: 400px;
+}
+
+
+    </style>
+</head>
+<body class="body">
+
+    <!-- =====================menu======================= -->
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+
+                <div class="menu">
+
+                    <div class="logo">
+                        <img src="images-removebg-preview 1.png" alt="" class="logo_img">
+                    </div>
+
+                   
+
+                    <div class="list">
+                        <ul class="ul1">
+                            <li class="li1">Home</li>
+                            <li class="li">Product</li>
+                            <li class="li">Pricing</li>
+                            <li class="li">Testimonials</li>
+                            <li class="li">Contact Us</li>
+                            <li class="li2">
+                                <button class="button1">Buy Now</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="burger"></div>
+
+                </div>
+
+                <!-- =================content===================== -->
+
+                <div class="content">
+                    <div class="txt2">
+                        <div class="txt3">Sweet fun, full of milk.</div>
+
+                        <div class="txt4">Feel inside cold with <br> our delicious <span class="span1">ice-cream.</span> </div>
+
+                        <div class="txt5">Some food has looked so awful that it's looked like something that <br> the dog's brought home, 
+                            yet after one mouthful I've been left <br> eating my thoughts, my words.</div>
+
+                            <button class="button2">But Now</button>
+
+                    </div>
+
+                    <img src="eep88j2SDJ-removebg-preview 2.png" alt="" class="content_img">
+
+                </div>
+
+                </div>
+
+                <!-- =============block1============== -->
+
+                <div class="block1">
+
+                    <div class="container2">
+                    
+                    <div class="block2">
+
+                        <img src="Group 100.png" alt="" class="icon1">
+
+                        <div class="txt2">
+
+                            <div class="txt6">Free Shipping</div>
+
+                            <div class="txt7">Last Chance! Free shipping on all  orders ends today.</div>
+
+                        </div>
+                    </div>
+
+
+                              
+                    <div class="block2">
+
+                        <img src="Group 98.png" alt="" class="icon1">
+
+                        <div class="txt2">
+
+                            <div class="txt6">Quick Packaging</div>
+
+                            <div class="txt7">Last Chance! Free shipping on all  orders ends today.<div>
+
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="block2">
+
+                    <img src="Group 94.png" alt="" class="icon1">
+
+                    <div class="txt2">
+
+                        <div class="txt6">100% Money Back</div>
+
+                        <div class="txt7">Last Chance! Free shipping on all orders ends today.<div>
+
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+
+            <div class="block2">
+
+                <img src="Group 96.png" alt="" class="icon1">
+
+                <div class="txt2">
+
+                    <div class="txt6">Fast Delivery</div>
+
+                    <div class="txt7">Last Chance! Free shipping on all  orders ends today.<div>
+
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+
+           
+            
+        </div>
+       </div> 
+
+        <!-- ===================block 4 site================= -->
+
+        <div class="block4_site">
+          <div class="container3">
+
+            <div class="txt12">
+              <div class="txt10">Brown Sugar <br> Oatmea</div>
+              <div class="txt11">Together with McDonald’s, Burger King has grown to become <br> synonymous with burgers in the US.Together with McDonald’s, <br>
+                Burger King has grown to become synonymous.</div>
+
+                <button class="button3">See Details</button>
+                </div>
+                
+                <img src="nWvlMBTo86-removebg-preview 1.png" alt="" class="milk">
+
+          </div>
+
+         
+
+        </div>
+        </div>
+
+        <!-- ==============5 block site====================== -->
+
+        <div class="txt13">
+            <div class="txt14">Our Product</div>
+            <div class="txt15">
+                <div class="list3">
+                <ul class="ul3">
+                    <li class="li33">ICE CREAM</li>
+                    <li class="li3">CAYENNE CHOCOLATE</li>
+                    <li class="li3">CAKE BATTER</li>
+                    <li class="li3">CANDY CANE</li>
+                    <li class="li3">PLATTERS</li>
+                    <li class="li3">DESSERT</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+  
+        <div class="block4_site">
+            <div class="container3">
+
+                <img src="Rectangle 74.png" alt="" class="milk">
+  
+              <div class="txt12">
+                <div class="txt10">Brown bread</div>
+                <div class="txt11">Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au <br> Pain is a pioneer
+                     in the healthy fast food scene.Bon Au Pain is a <br> pioneer in the healthy fast food scene.</div>
+
+                     <div class="txt16">
+
+                        <div class="txt17">$19.55</div>
+
+                        <div class="txt18">
+                            <del class="del1">$22.55</del>
+                        </div>
+
+                     </div>
+  
+                  <button class="button3">Buy Now</button>
+                  </div>
+                  
+                  
+  
+            </div>
+  
+           
+  
+          </div>
+
+          <!--=======================6 block site=============== -->
+
+          <div class="block4_sitew">
+            <div class="container3w">
+
+               
+  
+              <div class="txt12w1">
+                <div class="txt10w1">Cayenne chocolate</div>
+                <div class="txt11w1">Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au <br> Pain is a pioneer
+                     in the healthy fast food scene.Bon Au Pain is a <br> pioneer in the healthy fast food scene.</div>
+
+                    
+                <span class="span2">
+                        <div class="txt17w1">$19.55</div>
+
+                        <div class="txt18w1">
+                            <del class="del1w1">$22.55</del>
+                        </div>
+                        </span>
+
+               
+  
+                  <button class="button3w1">Buy Now</button>
+                  </div>
+                  
+                  <img src="Rectangle 78.png" alt="" class="milk">
+  
+            </div>
+  
+           
+  
+          </div>
+
+          <!-- =====================block 7 site=================== -->
+
+          <div class="block4_sitew2">
+            <div class="container3w2">
+
+                <img src="Rectangle 79.png" alt="" class="milk">
+  
+              <div class="txt12w2">
+                <div class="txt10w2">Sweet corn</div>
+                <div class="txt11w2">Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au <br> Pain is a pioneer
+                     in the healthy fast food scene.Bon Au Pain is a <br> pioneer in the healthy fast food scene.</div>
+
+                    
+                <span class="span3">
+                        <div class="txt17w2">$19.55</div>
+
+                        <div class="txt18w2">
+                            <del class="del1w2">$22.55</del>
+                        </div>
+                        </span>
+
+               
+  
+                  <button class="button3w2">Buy Now</button>
+                  </div>
+                  
+              
+  
+            </div>
+
+
+   
+    </div>
+
+    <script>
+        // https://www.figma.com/file/W7Uc1vm8ycKB1LfXi4LUMk/Polar?node-id=1%3A9
+
+
+
+    </script>
+</body>
+</html>
