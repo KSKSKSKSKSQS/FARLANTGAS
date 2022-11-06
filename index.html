@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0px auto;
+        }
+
+        .ul1 {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            display: flex;
+        
+        }
+
+
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-top: 10px;
+        }
+
+        .li1 {
+            padding: 0px 10px 0px 10px;
+            color: #4F5665;
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+        }
+
+        .button1 {
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            border: 0px solid red;
+            background-color: rgba(255, 0, 0, 0);
+            margin-right: 10px;
+            font-weight: 500;
+        }
+
+        .button2 {
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            color: #F53855;
+            border: 1px solid #F53855;
+            background: #ffffff;
+            padding: 10px 40px 10px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        /* ==========burger-menu============== */
+
+        .burger-menu {
+            position: absolute;
+            left: 0;
+            top: 0;
+        background: rgb(0, 0, 0);
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition-duration: 0.5s;
+        padding: 100px 0px
+       
+
+        }
+
+        .menu2 {
+      
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+           
+
+          
+}
+
+
+.ul12 {
+    padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+           
+}
+.li12 {
+    padding: 10px 10px 0px 10px;
+            color: #ffffff;
+            font-family: 'Rubik', sans-serif;
+            font-size: 36px;
+            text-align: center;
+            font-weight: 700;
+}
+
+.buttons2 {
+    margin-top: 20px;
+}
+
+.button12 {
+    font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            border: 0px solid red;
+            background-color: rgba(255, 0, 0, 0);
+            margin-right: 10px;
+            font-weight: 500;
+            color: rgb(255, 255, 255);
+}
+.button22 {
+    font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            color: #ffffff;
+            border: 1px solid #ffffff00;
+            background: #ff0000;
+            padding: 10px 40px 10px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+}
+
+.menu-btn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 2;  
+}
+
+
+
+@media(max-width: 935px) {
+    .menu-btn {
+        display: block;
+    }
+    .ul1 {
+        display: none;
+    }
+    .buttons {
+        display: none;
+    }
+}
+
+
+
+
+
+
+.burgerMenu_active {
+    transform: translateX(0%);
+    transition-duration: 0.5s;
+}
+
+
+
+.logo {
+    padding: 0px 5px 0px;
+    display: flex;
+    align-items: center;
+    width: 35px;
+}
+
+.txt2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+.span2 {
+    font-weight: 900;
+
+}
+
+
+
+.menu-btn {
+	width: 50px;
+	height: 45px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+}
+.menu-btn .span {
+	width: 40px;
+	height: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    transition-duration: 0.4s;
+	background-color: #2e2e2e;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 10px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 10px);
+}
+
+
+.menu-btn_active .span:nth-of-type(1){
+    transform: translateX(100%);
+    transition-duration: 0.2s;
+}
+
+.menu-btn_active .span:nth-of-type(2){
+    top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg); 
+  transition-duration: 0.5s;
+  background: #ffffff;
+}
+
+
+.menu-btn_active .span:nth-of-type(3){
+    top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+  transition-duration: 0.5s;
+  background: #ffffff;
+}
+
+@media (min-width: 935px) {
+    .burger-menu {
+        transform: translateX(-100%);
+        transition-duration: 0.7s;
+        }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="menu">
+
+                    <div class="logo">
+                        <img class='logo_img' alt='' src='Vector (15).png'>
+
+                        <div class="txt2">Lasles<span class='span2'>VPN</span></div>
+                    </div>
+
+                    <div class="list">
+                        <ul class="ul1">
+                            <li class="li1">About</li>
+                            <li class="li1">Features</li>
+                            <li class="li1">Pricing</li>
+                            <li class="li1">Testimonials</li>
+                            <li class="li1">Help</li>
+                        </ul>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="button1">Sign In</button>
+                        <button class="button2">Sign Up</button>
+                    </div>
+
+                    <div class="menu-btn">
+                        <span class="span"></span>
+                        <span class="span"></span>
+                        <span class="span"></span>
+                    </div>
+
+                </div>
+
+                <!-- =============burger-menu=============== -->
+
+                 <div class="burger-menu">
+
+                    <div class="menu2">
+
+    
+                        <div class="list2">
+                            <ul class="ul12">
+                                <li class="li12">About</li>
+                                <li class="li12">Features</li>
+                                <li class="li12">Pricing</li>
+                                <li class="li12">Testimonials</li>
+                                <li class="li12">Help</li>
+                            </ul>
+                        </div>
+    
+                        <div class="buttons2">
+                            <button class="button12">Sign In</button>
+                            <button class="button22">Sign Up</button>
+                        </div>
+    
+                    </div>
+    
+
+                 </div>
+             
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <script>
+        // https://www.figma.com/file/KyESq78uO7n7uWKYM1BP2v/LaslesVPN?node-id=1%3A2
+
+        (function () {
+            let menuBtn = document.querySelector('.menu-btn');
+            let burgerMenu = document.querySelector('.burger-menu');
+
+            menuBtn.addEventListener('click', () => {
+                menuBtn.classList.toggle('menu-btn_active')
+                burgerMenu.classList.toggle('burgerMenu_active')
+                burgerMenu.classList.toggle('burgerMenu_noactive')
+            })
+        }())
+
+
+    </script>
+</body>
+</html>
