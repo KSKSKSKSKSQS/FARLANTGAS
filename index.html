@@ -783,8 +783,6 @@ font-size: 25px;
     font-family: 'Russo One', sans-serif;
     color: #F1F1F1;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
-    margin-right: 20px;
-    margin-top: 15px;
     transition-duration: 0.5s;
 }
 .button5 {
@@ -797,8 +795,7 @@ font-size: 25px;
     font-family: 'Russo One', sans-serif;
     color: rgba(241, 241, 241, 1);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
-    margin-right: 20px;
-    margin-top: 15px;
+ 
     transition-duration: 0.5s;
 }
 .button6 {
@@ -811,7 +808,7 @@ font-size: 25px;
     font-family: 'Russo One', sans-serif;
     color: rgba(241, 241, 241, 1);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
-    margin-top: 15px;
+
     transition-duration: 0.5s;
 }
 .button7 {
@@ -824,8 +821,7 @@ font-size: 25px;
     font-family: 'Russo One', sans-serif;
     color: rgba(241, 241, 241, 1);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.453);
-    margin-left: 20px;
-    margin-top: 15px;
+
     transition-duration: 0.5s;
 }
 
@@ -858,7 +854,13 @@ font-size: 25px;
     justify-content: center;
 }
 
+@media (max-width: 716px) {
+  
+}
 
+.pd1 {
+    padding: 10px;
+}
 
     </style>
 </head>
@@ -1213,21 +1215,30 @@ font-size: 25px;
                     </div>
 
                     <div class="button_s2">
+
+                        <div class="pd1">
                         <button class="button4">
                             Малый <br> 2000 л.
                         </button>
+                        </div>
 
+                        <div class="pd1">
                         <button class="button5">
                             Средний <br> 6000 л.
                         </button>
+                        </div>
 
+                        <div class="pd1">
                         <button class="button6">
                             Стандартный <br> 10 000 л.
                         </button>
+                    </div>
 
+                        <div class="pd1">
                         <button class="button7">
                             Оптовый <br> 40 000 л.
                         </button>
+                        </div>
 
                     </div>
 
@@ -1235,9 +1246,11 @@ font-size: 25px;
                         <img src="01 2.png" alt="" class="img16">
                     </div>
 
+                    
                     <div class="button8_cont1">
                         <button class="button8">Заказать газ</button>
                     </div>
+                    
 
                 </div>
             </div>
@@ -1265,8 +1278,8 @@ font-size: 25px;
             button7.style.background = 'rgba(241, 241, 241, 0.2)'
             button4.style.transitionDuration = '0.5'
 
-            img16.src = '01 2.png'
-            img16.style.maxWidth = '596px'
+           
+
     })
 
     button5.addEventListener('click', function() {
@@ -1277,8 +1290,6 @@ font-size: 25px;
             button7.style.background = 'rgba(241, 241, 241, 0.2)'
             button5.style.transitionDuration = '0.5'
 
-            img16.src = '02 1.png'
-            img16.style.maxWidth = '477px'
 })
 
 button6.addEventListener('click', function() {
@@ -1288,8 +1299,6 @@ button6.addEventListener('click', function() {
             button7.style.background = 'rgba(241, 241, 241, 0.2)'
             button6.style.transitionDuration = '0.5'
 
-            img16.src = '03 1.png'
-            img16.style.maxWidth = '466px'
 })
 
 button7.addEventListener('click', function() {
@@ -1300,9 +1309,6 @@ button7.addEventListener('click', function() {
             button4.style.background = 'rgba(241, 241, 241, 0.2)'
             button6.style.background = 'rgba(241, 241, 241, 0.2)'
             button7.style.transitionDuration = '0.5'
-
-            img16.src = '04 1.png'
-            img16.style.maxWidth = '364px'
 })
 
 
